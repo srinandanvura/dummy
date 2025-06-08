@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Coin - Site Blocked</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            max-width: 500px;
+        }
+
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .blocked-site {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .suggestions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        .suggestions h3 {
+            margin-bottom: 15px;
+        }
+
+        .suggestions ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .suggestions li {
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚫</div>
+        <h1>Site Blocked</h1>
+        
+        <div class="blocked-site" id="blockedSite">
+            Loading...
+        </div>
+        
+        <div class="message">
+            You've run out of Focus Coins! 🪙<br>
+            Visit productive sites to earn more coins and unlock distracting sites.
+        </div>
+
+        <div class="suggestions">
+            <h3>💡 Earn coins by visiting:</h3>
+            <ul>
+                <li>📚 Wikipedia.org - Learn something new</li>
+                <li>💻 GitHub.com - Work on projects</li>
+                <li>🤔 StackOverflow.com - Solve problems</li>
+                <li>📖 Coursera.org - Take a course</li>
+                <li>🧠 LeetCode.com - Practice coding</li>
+            </ul>
+        </div>
+
+        <button class="btn" id="returnButton">
+            Return to Focus
+        </button>
+    </div>
+
+    <!-- External JavaScript file -->
+    <script src="blocked.js"></script>
+</body>
+</html>

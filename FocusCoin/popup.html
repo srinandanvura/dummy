@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Coin</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🪙 Focus Coin</h1>
+            <div class="coin-display">
+                <span class="coin-count" id="coinCount">0</span>
+                <span class="coin-label">coins</span>
+            </div>
+        </div>
+
+        <!-- Status Section -->
+        <div class="status-section">
+            <div class="current-site">
+                <span class="site-label">Current Site:</span>
+                <span class="site-name" id="currentSite">Loading...</span>
+                <span class="site-type" id="siteType"></span>
+            </div>
+            
+            <div class="timer-display">
+                <span class="timer-label">Session Time:</span>
+                <span class="timer" id="sessionTimer">00:00</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Start Focus Session</button>
+            <button id="stopBtn" class="btn btn-secondary" style="display: none;">Stop Session</button>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-value" id="todayCoins">0</span>
+                <span class="stat-label">Today's Coins</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-value" id="focusStreak">0</span>
+                <span class="stat-label">Focus Streak</span>
+            </div>
+        </div>
+
+        <!-- Site Lists (Collapsed by default) -->
+        <div class="site-lists">
+            <details>
+                <summary>Productive Sites (Earn Coins)</summary>
+                <div class="site-list" id="productiveSites">
+                    <span class="site-item">github.com</span>
+                    <span class="site-item">stackoverflow.com</span>
+                    <span class="site-item">wikipedia.org</span>
+                    <span class="site-item">leetcode.com</span>
+                    <span class="site-item">coursera.org</span>
+                </div>
+            </details>
+            
+            <details>
+                <summary>Distracting Sites (Spend Coins)</summary>
+                <div class="site-list" id="distractingSites">
+                    <span class="site-item">youtube.com</span>
+                    <span class="site-item">instagram.com</span>
+                    <span class="site-item">twitter.com</span>
+                    <span class="site-item">facebook.com</span>
+                    <span class="site-item">reddit.com</span>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
